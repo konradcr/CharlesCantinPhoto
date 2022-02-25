@@ -34,3 +34,5 @@ fields:
     maxSize: 64
   label: Photo
   description: Une image illustrant la prestation.
+pages:
+- prestations/mon-bebe.md
