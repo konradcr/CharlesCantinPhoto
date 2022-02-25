@@ -39,7 +39,7 @@ fields:
     maxSize: 64
   label: Photo
   description: Une image illustrant la prestation.
-  default: "/uploads/photo-1508004680771-708b02aabdc0_02_-2022.webp"
+  default: "/img/photo-1508004680771-708b02aabdc0.webp"
 - name: position
   type: select
   default: Gauche
