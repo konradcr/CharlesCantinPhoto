@@ -3,19 +3,35 @@ layout: layout.njk
 pageTitle: Prestations
 ---
 <main>
+    {% for prestation in collections.prestations %}
     <div class="card m-5 prestation" >
         <div class="row g-0">
-            <div class="col-md-6" >
-                <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" class="img-fluid" alt="...">
-            </div>
-            <div class="col-md-6 position-relative">
-                <div class="card-body">
-                    <h2 class="card-title">Juste moi</h2>
-                    <p class="card-text price"><i class="bi bi-currency-euro"></i>130</p>
-                    <p class="card-text description">Séance pour une personne, en extérieur ou en studio</p>
-                    <button class="btn"><a href="/contact">CONTACTEZ-MOI</a></button>
+            {% if prestation.data.position === "Gauche" %}
+                <div class="col-md-6" >
+                    <img src={{ prestation.data.image }} class="img-fluid" alt="...">
                 </div>
-            </div>
+                <div class="col-md-6 position-relative">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ prestation.data.title }}</h2>
+                        <p class="card-text price"><i class="bi bi-currency-euro"></i>{{ prestation.data.price }}</p>
+                        <p class="card-text description">{{ prestation.data.description }}</p>
+                        <button class="btn"><a href="/contact">CONTACTEZ-MOI</a></button>
+                    </div>
+                </div>
+            {% else %}
+                <div class="col-md-6 position-relative">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ prestation.data.title }}</h2>
+                        <p class="card-text price"><i class="bi bi-currency-euro"></i>{{ prestation.data.price }}</p>
+                        <p class="card-text description">{{ prestation.data.description }}</p>
+                        <button class="btn"><a href="/contact">CONTACTEZ-MOI</a></button>
+                    </div>
+                </div>
+                <div class="col-md-6" >
+                    <img src={{ prestation.data.image }} class="img-fluid" alt="...">
+                </div>
+            {% endif %}
         </div>
     </div>
+    {% endfor %}
 </main>
