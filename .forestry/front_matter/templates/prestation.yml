@@ -57,3 +57,4 @@ fields:
   description: Indiquer de quelle côté l'image doit-elle être placée.
 pages:
 - prestations/mon-bebe.md
+- src/prestations_posts/juste-moi.md
