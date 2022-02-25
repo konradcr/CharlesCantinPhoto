@@ -132,6 +132,40 @@ main.cover {
     display: none;
 }
 
+/*
+ * Prestations
+ */
+.prestation {
+    color: white;
+    background-color: #90AFC5;
+    border: none;
+    border-radius: unset;
+}
+
+.prestation img {
+    width: 100%;
+    max-height: 220px;
+    object-fit: cover;
+}
+
+.prestation h2 {
+    font-family: "Lora", Arial, sans-serif;
+    font-style: italic;
+}
+
+.prestation .price {
+    color: #336B87;
+}
+
+.prestation a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+/*
+ * Contact
+ */
+
 @media screen and (min-width:768px) {
     /* Nav */
     .breadcrumb-nav {
@@ -166,5 +200,24 @@ main.cover {
     .filter.active, .filter:hover {
         text-decoration: underline;
         color: #336B87;
+    }
+
+    /* Prestations page */
+    .prestation {
+        height: 330px;
+    }
+    .prestation img {
+        min-height: 330px;
+    }
+    .prestation .card-body {
+        position: absolute;
+        top: 50%;
+        transform: translate(0%, -50%);
+    }
+    .prestation .card-body {
+        font-size: 24px;
+    }
+    .prestation h2 {
+        font-size: 44px;
     }
 }
