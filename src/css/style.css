@@ -122,6 +122,12 @@ main.cover {
     color: white;
 }
 
+.card-img {
+    width: 100%;
+    max-height: 225px;
+    object-fit: cover;
+}
+
 /* Hide the filter buttons list for mobile */
 .btns-filters {
     display: none;
