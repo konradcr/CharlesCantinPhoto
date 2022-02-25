@@ -1,4 +1,35 @@
 ---
 label: Photo
 hide_body: false
-fields: []
+fields:
+- name: picture
+  type: file
+  config:
+    maxSize: 64
+  label: Photo
+  description: Photo à publier
+- name: filter
+  type: select
+  default: Portrait
+  config:
+    required: true
+    options:
+    - Grossesse
+    - Bébé
+    - Famille
+    - Baptême
+    - Couple
+    - Portrait
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Catégorie
+  description: Choisir la catégorie de la photo afin de pouvoir les filtrer.
+- name: tags
+  type: tag_list
+  default:
+  - pictures
+  label: Tag
+  hidden: true
