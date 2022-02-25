@@ -105,6 +105,33 @@ main.cover {
     font-family: "Lora", Arial, sans-serif;
 }
 
+/*
+ * Gallery
+ */
+.filter {
+    font-family: "Nova Mono", Arial, sans-serif;
+}
+
+.dropdown .btn, .prestation .btn  {
+    background-color: #336B87;
+    color: white;
+}
+
+.dropdown-item.active, .dropdown-item:hover{
+    background-color: #90AFC5;
+    color: white;
+}
+
+/* Hide the filter buttons list for mobile */
+.btns-filters {
+    display: none;
+}
+
+/* Hide image gallery when filtered */
+.gallery .gallery-image.hide {
+    display: none;
+}
+
 @media screen and (min-width:768px) {
     /* Nav */
     .breadcrumb-nav {
@@ -123,5 +150,21 @@ main.cover {
     /* Home Page */
     main.cover {
         height: 80%;
+    }
+
+    /* Gallery Page */
+    .dropdown-filters {
+        display: none;
+    }
+    .btns-filters {
+        display: block;
+    }
+    .filter {
+        font-size: 26px;
+        color: #A6A8AA;
+    }
+    .filter.active, .filter:hover {
+        text-decoration: underline;
+        color: #336B87;
     }
 }
