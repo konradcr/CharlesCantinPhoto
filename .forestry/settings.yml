@@ -5,10 +5,12 @@ admin_path: ''
 webhook_url: 
 sections:
 - type: directory
-  path: public/prestations_posts
+  path: src/prestations_posts
   label: Prestations
   create: documents
-  match: "**/*"
+  match: "*.md"
+  templates:
+  - prestation
 upload_dir: src/images
 public_path: "/images"
 front_matter_path: ''
