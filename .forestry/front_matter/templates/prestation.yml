@@ -55,6 +55,12 @@ fields:
       path: 
   label: Disposition illustration
   description: Indiquer de quelle côté l'image doit-elle être placée.
+- name: tags
+  type: tag_list
+  default: []
+  label: Tag
+  hidden: true
 pages:
+- prestations/mon-bebe.md
 - src/prestations_posts/juste-moi.md
 - src/prestations_posts/pour-deux.md
