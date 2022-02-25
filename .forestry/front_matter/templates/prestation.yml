@@ -61,4 +61,6 @@ fields:
   - prestations
   label: Tag
   hidden: true
-
+pages:
+- prestations/mon-bebe.md
+- src/prestations_posts/juste-moi.md
