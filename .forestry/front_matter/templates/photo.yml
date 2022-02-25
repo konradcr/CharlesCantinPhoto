@@ -33,3 +33,5 @@ fields:
   - pictures
   label: Tag
   hidden: true
+pages:
+- src/gallery_posts/babypicture.md
