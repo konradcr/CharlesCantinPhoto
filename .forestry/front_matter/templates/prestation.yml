@@ -36,3 +36,4 @@ fields:
   description: Une image illustrant la prestation.
 pages:
 - prestations/mon-bebe.md
+- public/prestations_posts/j-immortalise-l-evenement.md
