@@ -9,6 +9,8 @@ sections:
   label: Gallery
   create: documents
   match: "*.md"
+  templates:
+  - photo
 - type: directory
   path: src/prestations_posts
   label: Prestations
