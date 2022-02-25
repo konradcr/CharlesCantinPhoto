@@ -5,7 +5,9 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
+    min: 
+    max: 30
   label: Titre
   description: Le nom de la prestation.
 - name: price
@@ -18,14 +20,17 @@ fields:
     min: 
     max: 
     step: 
+    required: true
 - name: description
   type: textarea
   default: ''
   config:
-    required: false
+    required: true
     wysiwyg: false
     schema:
       format: markdown
+    min: 20
+    max: 120
   label: Détail
   description: La description de la prestation.
 - name: image
@@ -34,6 +39,22 @@ fields:
     maxSize: 64
   label: Photo
   description: Une image illustrant la prestation.
+  default: "/uploads/photo-1508004680771-708b02aabdc0_02_-2022.webp"
+- name: position
+  type: select
+  default: Gauche
+  config:
+    required: true
+    options:
+    - Droite
+    - Gauche
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Disposition illustration
+  description: Indiquer de quelle côté l'image doit-elle être placée.
 pages:
 - prestations/mon-bebe.md
 - public/prestations_posts/j-immortalise-l-evenement.md
