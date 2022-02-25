@@ -1,6 +1,6 @@
 ---
 label: Photo
-hide_body: false
+hide_body: true
 fields:
 - name: picture
   type: file
