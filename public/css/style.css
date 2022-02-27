@@ -112,9 +112,10 @@ main.cover {
     font-family: "Nova Mono", Arial, sans-serif;
 }
 
-.dropdown .btn, .prestation .btn  {
+.dropdown .btn, .prestation .btn, .form-container .btn  {
     background-color: #336B87;
     color: white;
+    border: none;
 }
 
 .dropdown-item.active, .dropdown-item:hover{
@@ -171,6 +172,17 @@ main.cover {
 /*
  * Contact
  */
+.form-container h2 {
+    font-family: "Nova Mono", Arial, sans-serif;
+}
+
+.form-container {
+    font-family: "Hind Madurai", Arial, sans-serif;
+}
+
+.form-container a:hover {
+    color: #336B87;
+}
 
 @media screen and (min-width:768px) {
     /* Nav */
@@ -225,5 +237,10 @@ main.cover {
     }
     .prestation h2 {
         font-size: 44px;
+    }
+
+    /* Contact */
+    .form-container h2 {
+        font-size: 2.5rem;
     }
 }
