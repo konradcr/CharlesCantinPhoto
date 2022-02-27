@@ -1,3 +1,5 @@
+// Script to check validation on contact from
+
 (function () {
     'use strict'
 

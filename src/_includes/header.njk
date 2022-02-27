@@ -1,5 +1,8 @@
+<!-- Header -->
 <header class="">
+    <!-- Include navbar -->
     {% include "navbar.njk" %}
+    <!-- Include breadcrumb for all pages except homepage -->
     {% if page.url != "/" %}
         {% include "breadcrumb.njk" %}
     {% endif %}

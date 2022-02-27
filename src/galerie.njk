@@ -2,8 +2,10 @@
 layout: layout.njk
 pageTitle: Galerie
 ---
+<!-- Gallery Page -->
 <main>
     <section class="py-4 text-center container">
+        <!-- Dropdown filter button for mobile version -->
         <div class="dropdown dropdown-filters">
             <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
                 FILTRER
@@ -18,6 +20,7 @@ pageTitle: Galerie
                 <li class="dropdown-item filter" data-filter="Portrait">Portrait</li>
             </ul>
         </div>
+        <!-- Simple filter button list for desktop version -->
         <div class="btns-filters">
             <button class="btn filter active" data-filter="all">Tout</button>
             <button class="btn filter" data-filter="Grossesse">Grossesse</button>
@@ -28,10 +31,11 @@ pageTitle: Galerie
             <button class="btn filter" data-filter="Portrait">Portrait</button>
         </div>
     </section>
-
+    <!-- Album Gallery -->
     <div class="album py-5 bg-light">
         <div class="container">
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 gallery">
+                <!-- Loop on pictures from gallery_posts/ imported from CMS Forestry -->
                 {% for picture in collections.pictures %}
                     <div class="col gallery-image" data-item="{{ picture.data.filter }}">
                         <div class="card shadow-sm">

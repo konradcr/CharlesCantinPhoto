@@ -2,11 +2,15 @@
 layout: layout.njk
 pageTitle: Prestations
 ---
+<!-- Prestations Page -->
 <main>
+    <!-- Loop on prestations from prestations_posts/ imported from CMS Forestry -->
     {% for prestation in collections.prestations %}
     <div class="card m-5 prestation" >
         <div class="row g-0">
+            <!-- Adjust position of the picture according to the orientation selected on Forestry form -->
             {% if prestation.data.position === "Gauche" %}
+                <!-- Left position of the picture -->
                 <div class="col-md-6" >
                     <img src={{ prestation.data.image }} class="img-fluid" alt="...">
                 </div>
@@ -19,6 +23,7 @@ pageTitle: Prestations
                     </div>
                 </div>
             {% else %}
+                <!-- Right position of the picture -->
                 <div class="col-md-6 position-relative">
                     <div class="card-body">
                         <h2 class="card-title">{{ prestation.data.title }}</h2>
