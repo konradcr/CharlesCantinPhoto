@@ -36,6 +36,7 @@ fields:
   hidden: true
 pages:
 - src/gallery_posts/baby-1.md
+- src/gallery_posts/baby-2.md
 - src/gallery_posts/baby.md
 - src/gallery_posts/baby2.md
 - src/gallery_posts/babypicture.md
