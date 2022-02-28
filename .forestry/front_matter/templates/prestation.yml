@@ -11,16 +11,13 @@ fields:
   label: Titre
   description: Le nom de la prestation.
 - name: price
-  type: number
-  label: Prix
-  description: Le tarif de la prestation (en euros).
-  default: 0
-  required: true
+  type: text
   config:
-    min: 
-    max: 
-    step: 
     required: true
+    max: 40
+    min: 1
+  label: Prix
+  description: Le prix de la prestation (en euros).
 - name: description
   type: textarea
   default: ''
