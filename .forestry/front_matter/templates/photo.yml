@@ -20,6 +20,7 @@ fields:
     - Baptême
     - Couple
     - Portrait
+    - Mariage
     source:
       type: simple
       section: 
@@ -34,4 +35,29 @@ fields:
   label: Tag
   hidden: true
 pages:
+- src/gallery_posts/baby-1.md
+- src/gallery_posts/baby-2.md
+- src/gallery_posts/baby.md
+- src/gallery_posts/baby2.md
 - src/gallery_posts/babypicture.md
+- src/gallery_posts/baptism1.md
+- src/gallery_posts/couple.md
+- src/gallery_posts/couple1-1.md
+- src/gallery_posts/couple1.md
+- src/gallery_posts/couple2.md
+- src/gallery_posts/family1.md
+- src/gallery_posts/family2.md
+- src/gallery_posts/family3.md
+- src/gallery_posts/portrait-1.md
+- src/gallery_posts/portrait-2.md
+- src/gallery_posts/portrait-3.md
+- src/gallery_posts/portrait.md
+- src/gallery_posts/portrait1.md
+- src/gallery_posts/pregnancy.md
+- src/gallery_posts/pregnancy1.md
+- src/gallery_posts/pregnancy2.md
+- src/gallery_posts/pregnancy3.md
+- src/gallery_posts/wedding-1.md
+- src/gallery_posts/wedding-2.md
+- src/gallery_posts/wedding-3.md
+- src/gallery_posts/wedding.md
