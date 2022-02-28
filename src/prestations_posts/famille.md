@@ -1,7 +1,7 @@
 ---
-price: 220
+price: "220"
 image: "/img/photo-1643869355390-4dcffc63d049.webp"
-position: Gauche
+position: Droite
 tags:
 - prestations
 title: Famille
