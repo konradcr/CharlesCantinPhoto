@@ -63,5 +63,6 @@ fields:
   hidden: true
 pages:
 - prestations/mon-bebe.md
+- src/prestations_posts/famille.md
 - src/prestations_posts/juste-moi.md
 - src/prestations_posts/mon-bebe.md
